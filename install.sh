@@ -15,3 +15,9 @@ fi
 
 cp "$pwd/files/bash_aliases" ~/.bash_aliases
 cp "$pwd/files/gitconfig" ~/.gitconfig
+
+f=~/.bashrc
+if ! grep -q "screen -ls" $f; then
+	echo "screen -ls" >> $f
+	source $f
+fi
