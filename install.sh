@@ -3,9 +3,11 @@ pwd=`dirname $0`
 
 sudo apt-get install -y \
 	git \
+	ranger \
 	screen \
 	tree \
 	unzip \
+	vim \
 	wget
 
 if [ ! -d ~/vimrc/ ]; then
