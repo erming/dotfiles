@@ -10,9 +10,9 @@ sudo apt-get install -y \
 	vim \
 	wget
 
-if [ ! -d ~/vimrc/ ]; then
-	git clone http://github.com/erming/vimrc ~/vimrc/
-	bash ~/vimrc/install.sh
+if [ ! -d "$pwd/vimrc" ]; then
+	git clone http://github.com/erming/vimrc "$pwd/vimrc"
+	bash "$pwd/vimrc/install.sh"
 fi
 
 cp "$pwd/files/bash_aliases" ~/.bash_aliases
