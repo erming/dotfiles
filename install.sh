@@ -21,6 +21,9 @@ bash "$pwd/vimrc/install.sh"
 cp "$pwd/files/bash_aliases" ~/.bash_aliases
 cp "$pwd/files/gitconfig" ~/.gitconfig
 
+# Force reload.
+source ~/.bash_aliases
+
 f=~/.bashrc
 if ! grep -q "screen -ls" $f; then
 	echo "screen -ls" >> $f
