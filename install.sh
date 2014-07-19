@@ -12,8 +12,11 @@ sudo apt-get install -y \
 
 if [ ! -d "$pwd/vimrc" ]; then
 	git clone http://github.com/erming/vimrc "$pwd/vimrc"
-	bash "$pwd/vimrc/install.sh"
 fi
+
+# Install vimrc.
+# The install will create your ~/.vim/ and ~/.vimrc
+bash "$pwd/vimrc/install.sh"
 
 cp "$pwd/files/bash_aliases" ~/.bash_aliases
 cp "$pwd/files/gitconfig" ~/.gitconfig
