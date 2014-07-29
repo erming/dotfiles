@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 pwd=`dirname $0`
 
 sudo apt-get install -y \
@@ -18,8 +18,8 @@ fi
 # The install will create your ~/.vim/ and ~/.vimrc
 bash "$pwd/vimrc/install.sh"
 
-cp "$pwd/files/bash_aliases" ~/.bash_aliases
-cp "$pwd/files/gitconfig" ~/.gitconfig
+cp "$pwd/bash_aliases" ~/.bash_aliases
+cp "$pwd/gitconfig" ~/.gitconfig
 
 # Force reload.
 source ~/.bash_aliases
