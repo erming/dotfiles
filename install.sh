@@ -24,8 +24,9 @@ cp "$pwd/gitconfig" ~/.gitconfig
 # Force reload.
 source ~/.bash_aliases
 
+# Change prompt style
 f=~/.bashrc
-if ! grep -q "screen -ls" $f; then
-	echo "screen -ls" >> $f
+if ! grep -q "PS1='\W $ '" $f; then
+	echo "PS1='\W $ '" >> $f
 	source $f
 fi
