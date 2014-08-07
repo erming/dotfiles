@@ -21,4 +21,7 @@ bash "$pwd/vimrc/install.sh"
 cp "$pwd/bash_aliases" ~/.bash_aliases
 cp "$pwd/gitconfig" ~/.gitconfig
 
-exec bash
+echo ""
+echo "Install complete!"
+echo "Please reload your session."
+echo ""
