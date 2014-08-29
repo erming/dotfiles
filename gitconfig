@@ -9,6 +9,7 @@
 	ui = auto
 [core]
 	editor = vi
+	autocrlf = input
 [alias]
 	a = add --all
 	b = branch
