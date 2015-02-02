@@ -3,7 +3,6 @@ pwd=`dirname $0`
 
 sudo apt-get install -y \
 	git \
-	ranger \
 	screen \
 	tree \
 	unzip \
@@ -19,6 +18,7 @@ fi
 bash "$pwd/vimrc/install.sh"
 
 cp "$pwd/bash_aliases" ~/.bash_aliases
+cp "$pwd/bash_profile" ~/.bash_profile
 cp "$pwd/gitconfig" ~/.gitconfig
 
 echo ""
