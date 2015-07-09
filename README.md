@@ -1,7 +1,3 @@
-# dotfiles
-
-My personal dotfiles for use on Debian-based operating systems.
-
 ## Install
 
 Copy and run this script:  
