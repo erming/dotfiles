@@ -2,7 +2,9 @@
 
 pwd=`dirname $0`
 
-sudo apt-get install -y \
+echo "Installing..."
+
+sudo apt-get install -y -qq \
 	git \
 	screen \
 	tree \
@@ -10,12 +12,15 @@ sudo apt-get install -y \
   	vim \
   	wget
 
+if [ ! -d ~/.vim/ ]; then
+	mkdir ~/.vim/
+fi
+
 cp "$pwd/.bash_aliases" ~/.bash_aliases
 cp "$pwd/.bash_profile" ~/.bash_profile
 cp "$pwd/.gitconfig" ~/.gitconfig
+cp "$pwd/.screenrc" ~/.screenrc
+cp -r "$pwd/.vim/autoload" "$pwd/.vim/bundle" "$pwd/.vim/colors" ~/.vim/
+cp "$pwd/.vimrc" ~/.vimrc
 
-if [ ! -d "$pwd/vimrc" ]; then
-	git clone http://github.com/erming/vimrc "$pwd/vimrc"
-fi
-
-bash "$pwd/vimrc/install.sh"
+echo "Done."
