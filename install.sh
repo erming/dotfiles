@@ -18,6 +18,7 @@ fi
 
 cp "$pwd/.bash_aliases" ~/.bash_aliases
 cp "$pwd/.bash_profile" ~/.bash_profile
+cp "$pwd/.editorconfig" ~/.editorconfig
 cp "$pwd/.gitconfig" ~/.gitconfig
 cp "$pwd/.screenrc" ~/.screenrc
 cp -r "$pwd/.vim/autoload" "$pwd/.vim/bundle" "$pwd/.vim/colors" ~/.vim/
