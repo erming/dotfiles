@@ -6,6 +6,15 @@ Copy and run this script:
 git clone http://github.com/erming/dotfiles && ./dotfiles/install.sh
 ```
 
+This will also `apt-get` a couple of useful packages:
+
+- `git`
+- `screen`
+- `tree`
+- `unzip`
+- `vim`
+- `wget`
+
 ## Shortcuts
 
 Useful `git` aliases:
