@@ -1,6 +1,7 @@
-source ~/.profile
-source ~/.bashrc
-source ~/.bash_aliases
+PS1="\W $ "
 
-# Disable default ctrl-s behaviour in vim
+alias t1="tree --dirsfirst -F -L 1"
+alias t2="tree --dirsfirst -F -L 2"
+
+# Disable ctrl-s in vim
 stty stop undef

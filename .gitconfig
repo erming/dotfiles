@@ -1,15 +1,10 @@
 [user]
 	name = Mattias Erming
-	email = mattias@mattiaserming.com
+	email = mattias@erming.io
 [push]
 	default = simple
 [credential]
 	helper = cache --timeout=7200
-[color]
-	ui = auto
-[core]
-	editor = vi
-	autocrlf = input
 [alias]
 	a = add --all
 	b = branch
