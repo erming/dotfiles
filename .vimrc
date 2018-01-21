@@ -18,6 +18,9 @@ set noexpandtab
 " Enable 256 colors
 set t_Co=256
 
+" Disable brackets highlighting
+au VimEnter * NoMatchParen
+
 " Save files using ctrl-s
 " Requires 'stty stop undef' inside your .bashrc
 nmap <c-s> :w<CR>
