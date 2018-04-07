@@ -14,4 +14,6 @@ cp "$pwd/.bash_profile" ~/.bash_profile
 cp "$pwd/.gitconfig" ~/.gitconfig
 cp "$pwd/.vimrc" ~/.vimrc
 
+timedatectl set-timezone Europe/Stockholm
+
 echo "Done."
