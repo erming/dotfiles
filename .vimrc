@@ -12,8 +12,9 @@ set timeoutlen=100
 set ttyfast
 
 " Set tab settings
-set ts=4
-set noexpandtab
+set ts=2
+set sw=2
+set expandtab
 
 " Enable 256 colors
 set t_Co=256
