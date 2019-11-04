@@ -10,6 +10,7 @@ sudo apt-get install -y -qq \
   	vim \
   	wget
 
+cp -r "$pwd/.docker" ~/.docker
 cp "$pwd/.bash_profile" ~/.bash_profile
 cp "$pwd/.gitconfig" ~/.gitconfig
 cp "$pwd/.vimrc" ~/.vimrc
