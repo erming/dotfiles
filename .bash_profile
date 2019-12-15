@@ -1,3 +1,5 @@
+source ~/.bashrc
+
 PS1="\W $ "
 
 alias t1="tree --dirsfirst -F -L 1"
