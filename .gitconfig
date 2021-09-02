@@ -4,7 +4,7 @@
 [push]
 	default = simple
 [credential]
-	helper = cache --timeout=7200
+	helper = cache --timeout=2592000
 [alias]
 	a = add --all
 	b = branch
